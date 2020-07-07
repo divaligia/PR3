@@ -1,0 +1,5 @@
+Product{ProductName='Kaffee', Price=8.99, ProductCategory='Lebensmittel'}
+Product{ProductName='Milch', Price=1.2, ProductCategory='Lebensmittel'}
+Product{ProductName='Gurke', Price=0.99, ProductCategory='Lebensmittel'}
+Product{ProductName='Maiswaffeln', Price=1.39, ProductCategory='Lebensmittel'}
+Product{ProductName='Tomate', Price=8.99, ProductCategory='Lebensmittel'}
