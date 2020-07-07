@@ -1,5 +1,16 @@
 package threads.bsp2;
 
+/* Erstellen Sie eine weitere konkrete Implementierung des Workers mit dem Name
+   FileReadWorker und implementieren Sie das Interface Runnable. Übernehmen Sie
+   zusätzlich im Konstruktor einen Wert für das neue Attribut private String path,
+   welches den Pfad zu einer Textdatei abbildet. Erstellen Sie ein weiteres Attribut
+   public ArrayList<String> lines, in welcher die eingelesen Textzeilen gespeichert
+   werden sollen. Laden Sie in der Methode work() die angegebene Textdatei und
+   speichern Sie die eingelesenen Textzeilen in der ArrayList. Überprüfen Sie auch
+   nach jedem Lesevorgang, ob shouldRun noch immer true ist und brechen Sie gegebenenfalls ab.
+    Für Tests können Sie den Lesevorgang auch verzögern, in dem Sie ein Thread.sleep() einbauen.
+    Rufen Sie zu Beginn und Ende von work() jeweils die Methoden printStarted()
+    und printStopped() auf. Rufen Sie die Methode work() in der Methode run() auf.   */
 
 
 import java.io.BufferedReader;
