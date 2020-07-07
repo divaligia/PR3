@@ -8,9 +8,10 @@ public class list_directories {
     // to prevent failures. Write a message to console if this is the case
 
     public static void main(String[] args) {
-        File path = new File("C:\\Users\\valen\\Documents\\Pr3");
+        File path = new File("C:\\Users\\kursinstall\\Documents\\Pr3\\neu");
         File absolute = new File("/");
-        File file = new File("C:\\Users\\valen\\Documents\\Pr3\\text.txt");
+        // wenn man hier die datei hinten weglässt, wird sie unten in der konsole ausgegeben, so gilt kommentar zeile 21
+        File file = new File("C:\\Users\\kursinstall\\Documents\\Pr3\\neu\\test.txt");
         System.out.print("Pfad zu Pr3: ");
         listDirectories(path);
         System.out.println("------------------");

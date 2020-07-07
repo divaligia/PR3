@@ -14,6 +14,7 @@ public class Person implements Runnable {
     public void run(){
         // So lange der synchronized-Block ausgeführt wird, darf kein anderer, der sich auf
         // das selbe "Sperr-Objekt bezieht" ausgeführt werden.
+        // idF sollte zuerst die Ausgabe des ersten Threads stattfinden und anschließend die des zweiten
 
         synchronized (lock){
             for(int i = 0; i < 10; i++){

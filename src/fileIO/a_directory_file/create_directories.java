@@ -4,15 +4,18 @@ import java.io.File;
 // mkdirs() kann mehrere Ordner erstellen
 public class create_directories {
     public static void main(String[] args) {
-        createDirs(new File("C:\\Users\\valen\\Documents\\campus02\\test\\neu\\2020"));
+
+        File f = new File("C:\\Users\\kursinstall\\Documents\\Pr3\\neu");
+        createDirs(f);
     }
 
     public static void createDirs(File f){
         // check ob fileObjekt schon existiert und ob es ein Verzeichnis ist
-//        if(!f.exists() && !f.isDirectory()){
-//            System.out.println("Directory " + f.getAbsolutePath() + " created?: " + f.mkdirs());
-//        } else {
+        if(!f.exists() && !f.isDirectory()){
             System.out.println("Directory " + f.getAbsolutePath() + " created?: " + f.mkdirs());
-//        }
+        } else {
+        // gibt true aus wenn der/die ordner erstellt wurden
+            System.out.println("Directory " + f.getAbsolutePath() + " created?: " + f.mkdirs());
+        }
     }
 }

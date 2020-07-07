@@ -2,8 +2,8 @@ package threads.example4;
 
 public class main {
     public static void main(String[] args) {
-        Person p1 = new Person("Name1");
-        Person p2 = new Person("Name2");
+        Person p1 = new Person("Vali");
+        Person p2 = new Person("Dani");
 
         Thread thread1 = new Thread(p1);
         Thread thread2 = new Thread(p2);

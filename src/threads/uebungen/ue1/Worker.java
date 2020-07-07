@@ -1,4 +1,9 @@
 package threads.uebungen.ue1;
+// Schreiben Sie eine Konsolenanwendung mit einem Hintergrund-Thread,
+// welcher im Sekundentakt die aktuelle Uhrzeit ausgibt
+// Aktuelle Uhrzeit:     Date d = new Date();
+// System.out.println(d.toString())
+// Per Tastendruck soll die Anwendung (und der Thread „höflich“) gestoppt werden können.
 
 import java.sql.Time;
 import java.time.LocalDateTime;

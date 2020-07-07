@@ -1,4 +1,10 @@
 package threads.uebungen.ue3a;
+// Erweitern Sie das vorherige Beispiel so, dass abwechselnd Threads eingesetz werden.
+// Tipp: Verwenden Sie die Methoden: wait() sowie notify()
+// * notify Wakes up all threads that are waiting on this object's monitor. A
+//     * thread waits on an object's monitor by calling one of the methods.
+
+//     * So führen die Threads die Zählarbeit abwechselnd aus
 
 public class Worker implements Runnable{
 

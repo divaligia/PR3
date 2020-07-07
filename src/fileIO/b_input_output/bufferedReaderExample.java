@@ -9,7 +9,7 @@ public class bufferedReaderExample {
     public static void main(String[] args) throws IOException {
 
         // Datei text.txt öffnen
-        File file = new File("C:\\Users\\valen\\Documents\\Pr3\\text.txt");
+        File file = new File("C:\\Users\\kursinstall\\Documents\\Pr3\\neu\\test.txt");
 
         // liefert einen textortiernten Stream der Datei zurück
         // liest Zeichen für Zeichen aus
@@ -24,7 +24,7 @@ public class bufferedReaderExample {
         String line;
         // solange eine weitere Zeile vorhanden ist, gib aus
         while ((line = bufferedReader.readLine()) != null){
-            System.out.println(line);
+            System.out.println("\t" + line);
             System.out.println("Neuer Satz");
         }
 

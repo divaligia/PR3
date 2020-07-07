@@ -4,6 +4,7 @@ package threads;
 // Diese werden in einem Befehlsobjekt vom Typ Runnable verpackt und dem Thread übergeben.
 // Wird der Thread gestartet, arbeitet er die Programmzeilen aus dem Befehlsobjekt parallel
 // zum restlichen Programmcode ab. Die Schnittstelle Runnable ist schmal und schreibt nur eine run()-Methode vor.
+
 public class RunnableExample implements Runnable {
 
     public static void main(String[] args) {

@@ -3,6 +3,7 @@ package threads;
 // Anstelle von implements runnable wird diese Klasse von Thread abgeleitet
 // runnable wird hier nicht benötigt, weil das Objekt Thread erstellt wird
 // man braucht trotzdem die run methode um anzugeben, was der thread machen soll
+
 public class ThreadSleep extends Thread{
 
     public void run(){

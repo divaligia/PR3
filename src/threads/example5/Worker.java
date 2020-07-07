@@ -1,4 +1,16 @@
 package threads.example5;
+// Es gibt bekanntlich Resourcen, die exklusiv vergeben werden müssen, hierzu gehören u.a.
+// Ausgaben auf den Drucker und Schreibzugriffe auf Dateien. Damit ein Thread eine Aufgabe
+// exklusiv abarbeiten kann stellt Java das Schlüsselwort synchronized bereit. Betritt ein
+// Thread einen Codebereich, der mit synchronized geschützt ist, kann er diesen Bereich exklusiv
+// abarbeiten. Kein anderer Thread kann dann diesen Bereich betreten. Dazu hat jedes Javaobjekt
+// einen Monitor. Diese Überwachungsinstanz enthält pro Objekt genau einen Lock. Will ein Thread
+// einen mit synchronized geschützten Bereich betreten, so muß er vom zugehörigen Objekt einen
+// Lock anfordern. Ist dieser bereits vergeben, so muß er warten. Da es nur einen Lock gibt
+// sperrt ein Thread, der diesen Lock besitzt zwangsläufig alle anderen mit synchronized
+// geschützten Bereiche dieses Objekts. Es werden damit evtl. auch Bereiche gesperrt, die mit der
+// von dem Thread gerade abgearbeiteten Code garnichts zu tun haben. Performanceverluste sind die
+// logische Folge dieses sozusagen rabiaten Verhalten
 
 import java.util.concurrent.atomic.AtomicInteger;
 
